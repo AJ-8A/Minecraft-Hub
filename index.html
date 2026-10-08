@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Hub - PC & Mobile Friendly</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #2d5a27, #1e3a1a);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #5a9c4a;
+  }
+  header h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    color: #8bc34a;
+    text-shadow: 2px 2px 0 #1a1a1a;
+  }
+  header p {
+    margin-top: 0.5rem;
+    color: #c8e6c9;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  }
+  nav {
+    background: #222;
+    padding: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    border-bottom: 2px solid #333;
+  }
+  nav a {
+    color: #8bc34a;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: #2a2a2a;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+  nav a:hover { background: #3a3a3a; }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .card {
+    background: #252525;
+    border-radius: 12px;
+    padding: 1.25rem;
+    border: 1px solid #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+  .card h2 {
+    color: #8bc34a;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .card p { color: #bbb; font-size: 0.95rem; }
+  .card a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: #64b5f6;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .card a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    margin-top: 2rem;
+  }
+  @media (max-width: 600px) {
+    nav { gap: 0.5rem; }
+    nav a { padding: 0.4rem 0.75rem; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Minecraft Hub</h1>
+    <p>PC & Mobile Friendly Resources • Tools • Guides</p>
+  </header>
+
+  <nav>
+    <a href="#servers">Servers</a>
+    <a href="#mods">Mods</a>
+    <a href="#shaders">Shaders</a>
+    <a href="#tools">Tools</a>
+    <a href="#guides">Guides</a>
+  </nav>
+
+  <main>
+    <section id="servers">
+      <h2 style="color:#8bc34a; margin-bottom:0.5rem;">Popular Servers</h2>
+      <div class="grid">
+        <div class="card">
+          <h2>Hypixel</h2>
+          <p>The biggest Minecraft server with SkyBlock, BedWars, SkyWars and more.</p>
+          <a href="https://hypixel.net" target="_blank" rel="noopener">Visit →</a>
+        </div>
+        <div class="card">
+          <h2>Minehut</h2>
+          <p>Create free servers instantly. Great for friends and small communities.</p>
+          <a href="https://minehut.com" target="_blank" rel="noopener">Visit →</a>
+        </div>
+        <div class="card">
+          <h2>CubeCraft</h2>
+          <p>Fun mini-games and a friendly community for all ages.</p>
+          <a href="https://cubecraft.net" target="_blank" rel="noopener">Visit →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mods" style="margin-top:2.5rem;">
+      <h2 style="color:#8bc34a; margin-bottom:0.5rem;">Essential Mods</h2>
+      <div class="grid">
+        <div class="card">
+          <h2>Fabric / Quilt</h2>
+          <p>Lightweight mod loader. Best performance and modern mod support.</p>
+          <a href="https://fabricmc.net" target="_blank" rel="noopener">Get Fabric →</a>
+        </div>
+        <div class="card">
+          <h2>Sodium + Iris</h2>
+          <p>Massive FPS boost + beautiful shaders on Fabric.</p>
+          <a href="https://modrinth.com/mod/sodium" target="_blank" rel="noopener">Download →</a>
+        </div>
+        <div class="card">
+          <h2>Modrinth</h2>
+          <p>Safe and modern place to download mods, resource packs and shaders.</p>
+          <a href="https://modrinth.com" target="_blank" rel="noopener">Browse →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="shaders" style="margin-top:2.5rem;">
+      <h2 style="color:#8bc34a; margin-bottom:0.5rem;">Popular Shaders</h2>
+      <div class="grid">
+        <div class="card">
+          <h2>Complementary</h2>
+          <p>Beautiful, performance-friendly shaders that work great on most PCs.</p>
+          <a href="https://www.complementary.dev" target="_blank" rel="noopener">Download →</a>
+        </div>
+        <div class="card">
+          <h2>BSL Shaders</h2>
+          <p>Classic high-quality shaders with excellent lighting and water.</p>
+          <a href="https://bitslablab.com" target="_blank" rel="noopener">Download →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" style="margin-top:2.5rem;">
+      <h2 style="color:#8bc34a; margin-bottom:0.5rem;">Useful Tools</h2>
+      <div class="grid">
+        <div class="card">
+          <h2>NameMC</h2>
+          <p>Check Minecraft usernames, skins, and availability.</p>
+          <a href="https://namemc.com" target="_blank" rel="noopener">Open →</a>
+        </div>
+        <div class="card">
+          <h2>Chunkbase</h2>
+          <p>Seed map viewer for finding structures and biomes.</p>
+          <a href="https://www.chunkbase.com" target="_blank" rel="noopener">Open →</a>
+        </div>
+        <div class="card">
+          <h2>Minecraft Wiki</h2>
+          <p>The official community wiki with everything you need to know.</p>
+          <a href="https://minecraft.wiki" target="_blank" rel="noopener">Visit →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" style="margin-top:2.5rem;">
+      <h2 style="color:#8bc34a; margin-bottom:0.5rem;">Quick Guides</h2>
+      <div class="grid">
+        <div class="card">
+          <h2>Install Fabric</h2>
+          <p>1. Download Fabric Installer<br>2. Run it and select your Minecraft version<br>3. Launch the new profile</p>
+        </div>
+        <div class="card">
+          <h2>Install Mods</h2>
+          <p>1. Get Fabric API + your mods from Modrinth<br>2. Put .jar files in the mods folder<br>3. Restart the game</p>
+        </div>
+        <div class="card">
+          <h2>Performance Tips</h2>
+          <p>• Use Sodium + Lithium + Starlight<br>• Lower render distance if needed<br>• Allocate 4–6 GB RAM max</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Minecraft Hub • Made for PC & Mobile • Not affiliated with Mojang or Microsoft
+  </footer>
+</body>
+</html>
